@@ -43,13 +43,24 @@
 
         #titleLine {
             font-family: 'Archivo Black', sans-serif;
-            font-size: 3em;
+            font-size: 10em;
             text-transform: uppercase;
         }
 
         #nameLine {
+            font-weight: bold;
             margin-top: 0.5em;
-            font-size: 1.5em;
+            font-size: 3.5em;
+        }
+
+        #contentLine {
+            height: 100%;
+        }
+
+        #timeLine {
+            font-weight: normal;
+            font-size: 2em;
+            color: #575757;
         }
 
 
@@ -75,17 +86,21 @@
     </style>
 </head>
 <body>
-<div id="contentBody" class="d-flex flex-column justify-content-center align-items-center">
-    <div id="titleLine" class="">
-        I
-        <svg class="heart" viewBox="0 0 32 29.6">
-            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-        </svg>
-        You
+<div id="contentBody" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="contentLine" class="d-flex flex-column justify-content-center align-items-center">
+        <div id="titleLine" class="">
+            I
+            <svg class="heart" viewBox="0 0 32 29.6">
+                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+            </svg>
+            You
+        </div>
+        <div id="nameLine">
+            Dear.&numsp;袁早宁
+        </div>
     </div>
-    <div id="nameLine">
-        Dear.
+    <div id="timeLine" class="align-self-end">
+        2023.02.12
     </div>
 </div>
 </body>
